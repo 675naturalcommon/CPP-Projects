@@ -4,6 +4,7 @@ using namespace std;
 
 class Computer
 {
+    //默认访问权限是私有的
 public:
     void setBrand(const char *brand)
     {
@@ -21,6 +22,8 @@ public:
     }
 
 private:
+    //私有成员变量，私有成员不能在类之外访问
+    //类中的数据成员以_开头
     char _brand[100];
     int _price;
 };
